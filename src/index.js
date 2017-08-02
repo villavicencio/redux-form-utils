@@ -14,7 +14,7 @@ export function createForm({ form, fields }) {
       };
 
       static contextTypes = {
-        store: React.PropTypes.object
+        store: PropTypes.object
       };
 
       constructor(props) {
