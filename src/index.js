@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * @param  {string} options.form     A unique key to identify your form throughout the app
