@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 /**
  * @param  {string} options.form     A unique key to identify your form throughout the app
@@ -8,14 +8,6 @@ import React, { PropTypes } from 'react';
 export function createForm({ form, fields }) {
   return (Component) => {
     class ReduxForm extends React.Component {
-      static propTypes = {
-        form: PropTypes.object,
-      };
-
-      static contextTypes = {
-        store: React.PropTypes.object
-      };
-
       constructor(props) {
         super(props);
         this.displayName = form + 'Form';
